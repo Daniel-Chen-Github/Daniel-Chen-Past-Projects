@@ -1,0 +1,185 @@
+body {
+  overflow-x: hidden;
+}
+/* opening picture classes */
+.opening {
+  width: 100%;
+  height: 45vh;
+  background: black;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 45vh;
+}
+.openingImage {
+  position: absolute;
+  bottom: 0%;
+  left: 30%;
+  width: 15%;
+  transform: translate(-50%, 50%);
+  z-index: 100;
+  opacity: 0;
+  transition: 0.8s;
+}
+.imageBackground {
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+}
+.imageBackground img {
+  margin-top: -20%;
+}
+
+/* arrow classes */
+.arrow {
+  position: absolute;
+  width: 5%;
+  cursor: pointer;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+.arrow:nth-child(1) {
+  top: 100%;
+  left: 15%;
+}
+.arrow:nth-child(2) {
+  top: 100%;
+  left: 90%;
+}
+
+/* text div classes */
+.description, .description1, .description2 {
+  font-size: 1.2vw;
+  margin: 0% 0% 0% 45%;
+  font-family: 'Oswald';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 45vh;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.description {
+  top: 65%;
+  left: 10%;
+  opacity: 0;
+}
+.description1 {
+  width: 35vw;
+  top: 65%;
+  left: 18%;
+  z-index: 1000;
+}
+.description2 {
+  top: 65%;
+  left: 28%;
+  opacity: 0;
+}
+.descriptionTitle, .descriptionTitle1, .descriptionTitle2 {
+  font-size: 5.5vw;
+  font-family: 'Staatliches';
+  text-align: left;
+  margin-bottom: 2vh;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 35vw;
+  transition: 1s;
+}
+.descriptionTitle {
+  transform: translate(-100%, 0%);
+}
+.descriptionTitle1 {
+  transform: translate(-50%, 0%);
+}
+.descriptionTitle2 {
+  transform: translate(0%, 0%);
+}
+.descriptionText, .descriptionText1, .descriptionText2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  width: 35vw;
+  transition: 1s;
+}
+.descriptionText {
+  transform: translate(-100%, -50%);
+}
+.descriptionText1 {
+  transform: translate(-50%, -50%);
+}
+.descriptionText2 {
+  transform: translate(0%, -50%);
+}
+
+/* buy button classes */
+.buyNow {
+  display: block;
+  width: 5vw;
+  font-size: 1.2vw;
+  border: 3px solid black;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Oswald";
+  padding: 0px 0px 5px 0px;
+  color: black;
+  position: relative;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  cursor: pointer;
+}
+.buttonOverlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background-color: #525252;
+  transition: 0.5s;
+}
+
+/* color classes */
+.color11 {
+  color: #E89E32;
+  text-shadow: 2px 2px #B17723;
+}
+.color12 {
+  color: #B17723;
+}
+.color21 {
+  color: #D5AC9C;
+  text-shadow: 2px 2px #B48D7E;
+}
+.color22 {
+  color: #B48D7E;
+}
+.color31 {
+  color: #EF8F6A;
+  text-shadow: 2px 2px #C5785A;
+}
+.color32 {
+  color: #C5785A;
+}
+.color41 {
+  color: #EDE692;
+  text-shadow: 2px 2px #D7D18A;
+}
+.color42 {
+  color: #D7D18A;
+}
+.color51 {
+  color: #D59F18;
+  text-shadow: 2px 2px #AF8315;
+}
+.color52 {
+  color: #AF8315;
+}
+.color61 {
+  color: #EBC976;
+  text-shadow: 2px 2px #C1A664;
+}
+.color62 {
+  color: #C1A664;
+}

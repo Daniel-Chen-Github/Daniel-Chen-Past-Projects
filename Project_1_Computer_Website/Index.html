@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="Index.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Englebert' rel='stylesheet'>
+    <style media="screen">
+    body {
+      margin : 0;
+      width : 100%;
+      background: linear-gradient(-45deg , #6E677E, #000000, #605083);
+      background-size: 400% 400%;
+      animation: gradientBG 13s ease infinite;
+      font-family: 'Englebert';
+      line-height : 20px;
+    }
+
+    @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 100%;
+    }
+    50% {
+      background-position: 100% 150%;
+    }
+    75% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+    }
+    /*So that the when clicking on achors, it is a scrolling effect rather than a immidiate change*/
+    html {
+  scroll-behavior: smooth;
+     }
+
+    .container {
+      width: 100%;
+      text-align : center;
+      padding: 23% 0px;
+      color : #D5D8DC;
+        }
+/*for the sticky nav*/
+    .logo {
+      float : left;
+      width : 8%;
+      padding: 5px 5px 10px 10px;
+    }
+    /*Creates the vertical grey line int between most of the options on the nav bar*/
+    .vertical {
+      border-radius: 1em;
+      border : 1px solid #686868;
+      background-color : #686868;
+      height : 80%;
+      float : left;
+      margin : 5px 10px 5px 5px;
+    }
+    .active {
+      background-color: green:
+    }
+    /*Position sticky so that it attaches to the TOP of the screen*/
+    .sticky {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    /*Creates space above the nav bar*/
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    /*Overflow is making objects which do not have enough space disapear rather than scrolling*/
+    #navbar {
+      overflow: hidden;
+      background-color: #333;
+      border : 1px solid black;
+      height : 55px;
+    }
+    /*Inline-block allows items to align horizontally while being able to be subject to margin and padding changes*/
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px 18px;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 0.1s;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #navbar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+/*start for the body*/
+    .vertical1 {
+      border-radius: 1em;
+      border : 1px solid grey;
+      background-color : grey;
+      height : 20px;
+      margin : 0px 15px -5px 15px;
+      display: inline-block;
+    }
+    /*Transform to delay the change and chaging the size of the object*/
+    .opening {
+      margin: 20px 0px 10px 90px;
+      width : 25%;
+      border : 2px solid #CCCCCC ;
+      border-radius: 15px;
+      float : left;
+      z-index: -1;
+      transition: transform .5s;
+      background-color: white;
+    }
+    .opening:hover {
+      transform: scale(1.05);
+    }
+    .opening1 {
+      margin: 20px 0px 10px 220px;
+      padding-bottom: 20px;
+      width : 25%;
+      border : 2px solid #CCCCCC ;
+      border-radius: 15px;
+      float: none;
+      z-index: -1;
+      display: inline-table;
+      transition: transform .5s;
+      background-color: white;
+    }
+    .opening1:hover {
+      transform: scale(1.05);
+    }
+    #myBar {
+      background-color : #686868;
+      padding: 0px 0px 0 170px;
+      color : white;
+    }
+    #myBar a{
+      display: inline-block;
+      font-size: 20px;
+      text-decoration: none;
+      color : white;
+      transition: 0.1s;
+    }
+    #myBar a:visited {
+      color: white;
+    }
+    #myBar a:hover {
+      border-bottom: 5px outset #4B4B4B ;
+      border-radius: 3px;
+    }
+    #sub {
+      padding-top : 35px;
+      font-size: 60px;
+    }
+    .best a{
+      color : #1FD32A;
+      text-decoration: none;
+      margin: 0px 0px 10px 25px;
+      transition: 0.5s;
+    }
+    .best a:visited {
+      color: #5CA260 ;
+    }
+    .best a:hover {
+      background-color: #5CA260 ;
+      color: black;
+      text-decoration: underline;
+    }
+
+/*Computer Buying Guide CSS starts here*/
+    .sub1 {
+      color : white;
+      float : right;
+      font-family: 'Amatic SC';
+      font-size: 20px;
+      max-width: 20%;
+      margin-right: 2%;
+    }
+
+    .button1 a{
+      background-color: white;
+      color: black;
+      padding : 8px 16px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+    }
+    .button1 a:hover {
+      transition: 0.5s;
+      background-color: #5B94E2 ;
+      color: black;
+      text-decoration: underline;
+    }
+    .button1 a:active {
+      text-decoration: underline;
+    }
+    .parallax {
+     /* The image used */
+     background-image: url("Image/Parallax.jpg");
+     /* Set a specific height */
+     min-height: 500px;
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     margin-top: 50px;
+   }
+   /*Centered to the middle of the image, or in this case the center of the parallax image*/
+     .text {
+     color: white;
+     font-size: 50px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+   /*position relative therefore taking the same position as the parent object or the text in this situation*/
+    .thumbnail {
+      display : inline-block;
+      margin : 10px 10px;
+      max-width: 20%;
+      color : white;
+      position: relative;
+    }
+    /*Having the thumbnails to be completly covered by the appearing box*/
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: 0.6s;
+      opacity: 0;
+      background-color: #D9D9D9 ;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color : black;
+    }
+    .overlay:hover {
+      opacity: 0.8;
+    }
+
+
+
+/*Start on the computer one*/
+    .parallax1 {
+  /* The image used */
+  background-image: url("Image/Parallax1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 10px;
+  }
+
+/*Padding and margin will now be compared as a realative side of the original container*/
+  * {
+  box-sizing: border-box;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 32%;
+  padding: 15px;
+  margin : 8px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-color :#393939;
+  transition: 0.3s;
+}
+  .column:hover {
+    transform: scale(1.015);
+  }
+
+.containerTab {
+  padding: 20px;
+  color: white;
+  margin : -5px 8px 8px 8px;
+}
+
+/* Clear floats after the columns (create space for other objects to come)*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding : 5px;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+  .info {
+    max-width: 45%;
+    float : left;
+    margin : 20px;
+    padding : 10px;
+    font-size: 20px;
+  }
+
+  footer {
+    height : 200px;
+    background-color: #686868 ;
+    color : white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  footer a{
+    color : white;
+    text-decoration: none;
+  }
+  footer a:hover{
+    color : black;
+  }
+  .title2 {
+    background-color: white;
+    display : inline-block;
+    width : 31%;
+    margin: 10px 15px;
+    position : relative;
+    text-align: center;
+  }
+  .foter a{
+    color : white;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .foter a:hover {
+    color : black;
+  }
+  .good a{
+    max-width : 95%;
+    background-color: white;
+  }
+    </style>
+
+
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 ><span style="border-bottom : 4px solid #625977; border-radius : 4px;">Owned and Operated by Ray Bao</span></h1>
+      <h3><span style="border-bottom : 4px solid #625977; border-radius : 4px;">(made by Daniel Chen)</span></h3q>
+    </div>
+
+
+<div id="navbar">
+  <img style="margin : -2px 0px 0px -3px;" class="logo" src="image/Logo.png" alt="This is the logo" title="This is the logo">
+  <table class="vertical">
+    <tr>
+    </tr>
+  </table>
+  <a class="active" href="javascript:void(0)">Index</a>
+  <a href="Ratings.html">Suggestions</a>
+  <a href="Bio.html">About</a>
+  <a href="Bio.html#contact5">Contact</a>
+  <a style="float : right;" href="Feedback.html">Feedback</a>
+  <a style="float : right;" class="active" href="member.html">Become a member</a>
+</div>
+
+<div style="background-color : #EFEFEF; margin-top : -59px; height : 100%; padding-bottom : 1px;">
+
+
+<header id="myBar">
+    <p id="sub">Computer Overview</p>
+    <div style="margin-top : -33px; padding : 0px 0px 5px 15px;">
+    <a href="#" style="border-bottom: 5px outset #4B4B4B ; border-radius: 3px;">What are you looking for?</a>
+      <table class="vertical1">
+        <tr>
+        </tr>
+      </table>
+    <a href="#iframe3">Guide</a>
+    <table class="vertical1">
+      <tr>
+      </tr>
+    </table>
+    <a href="#Rec">Top Choices</a>
+  </div>
+</header>
+
+<div>
+<div class="opening">
+  <div class="good">
+    <a href="https://www.bestbuy.ca/en-ca/category/desktop-computers/20213"><img src="Image/Laptop.jpg" alt="This is a Laptop" style="width : 95%; height: 270px; margin : 10px;"></a>
+  </div>
+  <h2 style="margin-left : 20px;">Laptops (5,775)</h2>
+  <p style="margin-left : 20px">Whether your main consideration is portability, power or
+    screen size, make your mind up now as it will be an essential factor in deciding which type of laptop is right for you.</p>
+    <div class="best">
+  <a href="https://www.bestbuy.ca/en-ca/category/laptops-macbooks/20352">Best Buy Sales Options</a>
+</div>
+  <br>
+  <br>
+</div>
+
+<div class="opening">
+  <div class="good">
+  <a href="https://www.bestbuy.ca/en-ca/category/desktop-computers/20213"><img src="Image/Desktop.jpg" alt="This is a Desktop" style="max-width : 95%; height: 270px; margin : 10px;" ></a>
+</div>
+  <h2 style="margin-left : 20px;">Desktops (6,415)</h2>
+  <p style="margin-left : 20px;">Desktops typically offer more performance for the money than laptops and are less expensive to repair.
+    They may allow for a more ergonomically correct work environment,
+    let you work on a larger screen, and generally come with better speakers.</p>
+    <div class="best">
+  <a href="https://www.bestbuy.ca/en-ca/category/desktop-computers/20213">Best Buy Sales Options</a>
+</div>
+<br>
+</div>
+
+<div class="opening " style="padding-bottom: 20px;">
+  <div class="good">
+   <a href="https://www.bestbuy.ca/en-ca/category/desktop-computers/20213"><img src="Image/Chrombook.jpg" alt="This is a Chromebook" style="width :95%; height: 270px; margin : 10px;"></a>
+</div>
+  <h2 style="margin-left : 20px;">Chromebooks (8,763)</h2>
+  <p style="margin-left : 20px;"> Chromebooks are based on Google's Chrome operating system.
+    They're generally inexpensive, with some starting as low as $170.
+    They're designed for users willing to work on and store most of their files online.</p>
+    <div class="best">
+  <a href="https://www.bestbuy.ca/en-ca/search?search=chromebook">Best Buy Sales Options</a>
+</div>
+</div>
+</div>
+
+
+<h2 style="color : white;">a</h2>
+<h4 style="color : white;">f</h4>
+
+<div class="opening1">
+  <div class="good">
+  <a href="https://www.bestbuy.ca/en-ca/search?search=gaming"><img src="Image/Gaming.jpg" alt="This is a Gaming Computer"  style="width :95%; height: 270px; margin : 10px;"></a>
+</div>
+  <h2 style="margin-left : 20px;">Gaming PC</h2>
+  <p style="margin-left : 20px;"> Gaming computers are different from others because of their higher class CPU, RAM, video card and processor.
+  They are used for a much faster frames and better quality content. They higher your gaming experience can look amazing
+  with other gaming acessories.</p>
+  <div class="best>"
+  <a href="https://www.bestbuy.ca/en-ca/search?search=gaming">Best Buy Sales Options</a>
+</div>
+</div>
+
+<div class="opening1">
+  <div class="good">
+    <a href="https://www.bestbuy.ca/en-ca/search?path=category%253aComputers%2B%2526%2BTablets&search=pc+components"><img src="Image/Components.jpg" alt="This is a Computer Component" style="width :95%; height: 270px; margin : 10px;"></a>
+</div>
+  <h2 style="margin-left : 20px;">Components (9,539)</h2>
+  <p style="margin-left : 20px;"> If you are not able to find the quality and or certaine traits that you want, there will always be the
+  option to build your own computer. By mix and matching different qualities from certaine components, you are able to make your dream
+  computer or laptop.</p>
+  <div class="best">
+  <a href="https://www.bestbuy.ca/en-ca/search?path=category%253aComputers%2B%2526%2BTablets&search=pc+components">Best Buy Sales Options</a>
+</div>
+</div>
+
+
+
+<br><a name="iframe3"></a>
+<div class="parallax"><h1 class="text">What Should I Buy?</h1></div>
+
+<div style="background-color: #8A8A8A ; margin-top : 10px;" >
+<iframe src="Image/Work.jpg" width="75%" height="480px;" class="iFrame" scrolling="no" name="iframe_a" style="border : none; margin : 5px 5px 0px 5px;"></iframe>
+<div class="sub1">
+  <h1>Computer Buying Guide</h1>
+  <p>These days, it’s not unusual for individuals or families to have more than one type of computer.
+    If you’re looking to carry your computer to work or on vacation, you obviously need a laptop. If you plan on gaming or using it only for home,
+    aim more towards a desktop. There are many great options out there and you need to know which one you want to buy.</p>
+
+<div class="button1">
+      <a href="https://www.consumerreports.org/cro/computers/buying-guide/index.htm">Read More</a>
+    </div>
+</div>
+</div>
+
+<center>
+  <!--Sets the overlay as a link and its target is the iFrame-->
+<div style="background-color : black; width : 100%; height : 300px;">
+  <div class="thumbnail">
+    <img src="Image/Thumbnail1.jpg" alt="This is the first Thumbnail" style="width : 100%;">
+    <h2>What you MUST know before buying a computer</h2>
+    <div class="overlay">
+      <h1>Play now</h1>
+      <a  href="https://www.youtube.com/embed/EhvJRDJaofQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target="iframe_a" allowfullscreen><img src="Image/Play.png" alt="This is a play button"  width="40%"></a>
+    </div>
+  </div>
+  <div class="thumbnail">
+    <img src="Image/Thumbnail2.jpg" alt="This is the second Thumbnail" style="width : 100%;">
+    <h2>10 Tips for buying a computer | The Tech Clap</h2>
+    <div class="overlay">
+      <h1>Play now</h1>
+      <a href="https://www.youtube.com/embed/33_XesFphn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target="iframe_a"><img src="Image/Play.png" alt="This is a play button"  width="40%"></a>
+    </div>
+  </div>
+  <div class="thumbnail">
+    <img src="Image/Thumbnail3.jpg" alt="This is the third Thumbnail" style="width : 100%;">
+    <h2>The 5 best value pre-built gaming PCs</h2>
+    <div class="overlay">
+      <h1>Play now</h1>
+      <a href="https://www.youtube.com/embed/7Sg7JaeBC7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target="iframe_a"> <img src="Image/Play.png" alt="This is a play button"  width="40%"></a>
+    </div>
+  </div>
+  <div class="thumbnail">
+    <img src="Image/Thumbnail4.jpg" alt="This is the fourth Thumbnail" style="width : 100%;">
+    <h2>Best latops for students in 2019 </h2>
+    <h2 style="color : black; margin-top : -20px;">fasdfasdf</h2>
+    <div class="overlay">
+      <h1>Play now</h1>
+      <a  href="https://www.youtube.com/embed/0QVKIQ2DhdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target="iframe_a"><img src="Image/Play.png" alt="This is a play button"  width="40%"></a>
+    </div>
+  </div>
+
+</div>
+</center>
+<a name="Rec"></a>
+<div class="parallax1"><h1 class="text">Top Recommodations</h1></div>
+
+<div class="title2">
+  <h1>Latops</h1>
+</div>
+
+<div class="title2">
+  <h1>Desktops</h1>
+</div>
+
+<div class="title2">
+  <h1>Chrombooks</h1>
+</div>
+<center>
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');">
+    <img src="Image/1.jpg" alt="This is the first laptop" style="width : 100%; height : 300px;">
+    <h2 align="center">Lenovo ThinkPad X1 Carbon</h2>
+    <div class="best" style="width : 100%; text-align : center;">
+    <a href="Ratings.html#uno">Other suggestions</a>
+  </div>
+</div>
+  <div class="column" onclick="openTab('b2');">
+    <img src="Image/Dell.jpg" alt="This is the second laptop" style="width : 100%; height : 300px;">
+    <h2 align="center">Dell XPS Tower</h2>
+    <div class="best" style="width : 100%; text-align : center;">
+    <a href="Ratings.html#dos">Other suggestions</a>
+  </div>
+  </div>
+  <div class="column" onclick="openTab('b3');">
+    <img src="Image/Google.jpg" alt="This is the third laptop" style="width : 100%; height : 300px;">
+    <h2 align="center">Google Pixel Go</h2>
+    <div class="best" style="width : 100%; text-align : center;">
+    <a href="Ratings.html#tri">Other suggestions</a>
+  </div>
+  </div>
+</div>
+</center>
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab row" style="display:none;background: #9A9A9A;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img src="Image/1.jpg" alt="This is the first laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+  <div class="info">
+    <h1 style="margin-top : -30px;">Lenovo ThinkPad X1 Carbon</h1>
+    <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+    <p>CPU: Intel Core i5/Core i7 |
+      GPU: Intel UHD 620 | RAM: 8GB/16GB | Storage: 256GB/512GB/1TB SSD |
+      Display: 14-inch, 1080p or 4K | Size: 12.7 x 8.5 x 0.6 inches |
+      Weight: 2.5 pounds</p>
+      <table align="center" style="min-width : 400px; border : 1px solid black;">
+        <tr>
+          <th colspan="4" align="center" style="font-size : 25px;  padding-top : 10px;">Advantages and Disadvantages</th>
+        </tr>
+        <tr>
+          <td align="center"><b>Advantages<b/></td>
+          <td align="center"><b>Disadvantages</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul style="list-style-image: url(Image/Plus.png); ">
+              <li>Attractive, lightweight chassis</li>
+              <li>Best-in-class keyboard</li>
+              <li>Long battery life (on 1080p model)</li>
+              <li>Bright, vivid display options</li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul style="list-style-image: url(Image/Minus1.png);">
+              <li>No microSD card slot</li>
+              <li>4K model has short battery life</li>
+              <li>Top configs get pricey</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+      <p>Starting at $1,079.99 on Amazon, Lenovo made our favorite business
+        laptop even better by improving its speakers and adding some useful security features,
+        including a webcam shutter and IR camera. On top of that, you get fast performance,
+        long battery life (on the 1080p model) and two gorgeous, 1080p and 4K display options,
+        all in an impossibly lightweight chassis. But it's still those classic ThinkPad features —  a
+         durable design, best-in-class keyboard and stealthy black/red aesthetics — that carry the X1 Carbon to greatness.</p>
+  </div>
+</div>
+
+<div id="b2" class="containerTab row" style="display:none;background: #9A9A9A ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> <!--Closes tab when clicks on the x because the parent element is set to display non-->
+  <img src="Image/Dell.jpg" alt="This is the best desktop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+  <div class="info">
+    <h1 style="margin-top : -30px;">Dell XPS Tower</h1>
+    <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+    <p>CPU: 9th Gen Intel® Core™ i9 9900 (8-Core, 16MB Cache, up to 5GHz with Intel® Turbo Boost Technology)|
+      GPU: NVIDIA® GeForce RTX™ 2060 6GB GDDR6 |
+      RAM: 8GB DDR4 at 2400MHz; up to 32GB  | Storage: 512GB/1TB/2TB/4TB | Ports: 16 ports including SD card Slot, USBC etc.</p>
+      <table align="center" style="min-width : 400px; border : 1px solid black;">
+        <tr>
+          <th colspan="4" align="center" style="font-size : 25px;  padding-top : 10px;">Advantages and Disadvantages</th>
+        </tr>
+        <tr>
+          <td align="center"><b>Advantages<b/></td>
+          <td align="center"><b>Disadvantages</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul style="list-style-image: url(Image/Plus.png); ">
+              <li>Compact, minimalist designe</li>
+              <li>Full online customer support</li>
+              <li>Capacble of upgrades</li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul style="list-style-image: url(Image/Minus1.png);">
+              <li>Starting memory isn't ideal for VR</li>
+              <li>Lower graphical performance compared to rivals</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+      <p>Starting at 1,245.00 on Amazon, The Dell XPS Tower looks unremarkable,
+        like that PC your parents used to have hidden away underneath the desk when you were a kid.
+        However, its no-nonsense chassis hides quite a selection of exciting internals.
+        One of the best PCs right now, the Dell XPS Tower is packed with up to an RTX 2070 graphics card,
+        a 9th-generation Intel Core processor, and a large hard drive and/or SSD.
+        This special edition PC configuration is only available in the US. However,
+        UK and Australian readers can grab the regular Dell XPS Tower and then add similar upgrades,
+        though there are some limitations such as the graphics card options topping out with the GTX 1060. </p>
+  </div>
+</div>
+
+<div id="b3" class="containerTab row" style="display:none; background-color : #9A9A9A;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img src="Image/Google.jpg" alt="This is the third laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+  <div class="info">
+    <h1 style="margin-top : -30px;">Google Pixel Go</h1>
+    <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+    <p>CPU: Intel Core m3 - Intel Core i7 | Graphics: Intel UHD Graphics 615
+      | RAM: 8GB - 16GB | Screen: 13.3-inch Full HD (1,920 x 1,080) or 4K LCD touchscreen
+      | Storage: 128GB - 256GB eMMC | Weight: 2.3 pounds</p>
+      <table align="center" style="min-width : 400px; border : 1px solid black;">
+        <tr>
+          <th colspan="4" align="center" style="font-size : 25px; padding-top : 10px;">Advantages and Disadvantages</th>
+        </tr>
+        <tr>
+          <td align="center"><b>Advantages<b/></td>
+          <td align="center"><b>Disadvantages</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul style="list-style-image: url(Image/Plus.png); ">
+              <li>Incredible battery life</li>
+              <li>Amazing ‘Hush’ keyboard</li>
+              <li>Comfortable Keyboard</li>
+              <li>Rare 1080p webcam</li>
+              <li>Excellent design</li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul style="list-style-image: url(Image/Minus1.png);">
+              <li>Iffy pricing at mid- to- high-end</li>
+              <li>No biometric login</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+      <p>Starting at $879 on Amazon, Google continues its tradition of making the best Chromebooks in the world.
+        While it's older Pixelbook used to occupy the top spot in our best Chromebooks list,
+        it's been replaced by Google's latest Chromebook: the Pixelbook Go.
+        This is a Chromebook that proves that these devices can be just as stylish and powerful as traditional laptops,
+        and the Pixelbook Go brings a lot of the original Pixelbook's premium features to a more affordable device.
+        It also features a fantastic battery life and a brilliant keyboard that makes typing on a pleasure. </p>
+  </div>
+</div>
+
+  <footer id="footer" class="foter">
+    <div style="float : left;">
+    <ul>
+      <li style="list-style-type : none;"><u>Connect</u></li>
+      <li style="list-style-type : none;"><br></li>
+      <li><a href="https://www.instagram.com/ray_of._.sunshine/">Google</a></li>
+      <li><a href="https://www.youtube.com/user/bwf">Instagram</a></li>
+      <li><a href="https://www.google.com/search?q=ray+bao&oq=ray+bao&aqs=chrome..69i59l3j69i57j69i59j69i60.2647j0j7&sourceid=chrome&ie=UTF-8">Youtube</a></li>
+      <li><a href="https://www.linkedin.com/in/raybao/">LinkIn</a></li>
+    </ul>
+  </div>
+  <div style="float : left;">
+  <ul>
+    <li style="list-style-type : none;"><u>Contact</u></li>
+    <li style="list-style-type : none;"><br></li>
+    <li>613 849 3829</li>
+    <li>raybaoshop@matthew'sgmail.com</li>
+    <li>Bao's Computer Shoop</li>
+    <li style="list-style-type : none;"><br></li>
+    <li>729 Matthew Circle,</li>
+    <li>Toronto, Ontario K3U N8H</li>
+  </ul>
+  </div>
+  <div style="float : left;">
+  <ul>
+    <li style="list-style-type : none;"><u>Top Patreons</u></li>
+    <li style="list-style-type : none;"><br></li>
+    <li>Matthew Meh</li>
+    <li>Quaker Oats</li>
+    <li>Ehma Hueng</li>
+    <li>Adem Yeh</li>
+    <li>Denial Chern</li>
+  </ul>
+  </div>
+      <div style="float : right; margin-right : 20px;">
+    <p style="">&#169; Bao's Computer SHOOOOOOOOOOPPPPPPPPPP Company owo</p>
+  </div>
+  </footer>
+</div>
+
+<script>
+/*When the user scrolls the page, execute myFunction*/
+window.onscroll = function() {myFunction()};
+/*Get the Navbar*/
+var navbar = document.getElementById("navbar");
+/*stick to the top*/
+var sticky = navbar.offsetTop;
+/*activate the sticky navbar when scroll, deactiviate when leave the scroll position*/
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+/*script is too open the tab*/
+/*Hides all tabs except the one that is open*/
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+  </body>
+</html>

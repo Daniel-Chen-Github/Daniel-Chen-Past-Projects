@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home | KII Beverages</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+  </head>
+  <body>
+
+    <!-- idle header -->
+    <div class="idleHeader">
+      <div class="headerImageBackground"><img src="image/headerbackground.png" style="width: 100%;"></div>
+      <a href="#"><img src="image/letter3.png" alt="This is the logo" class="idleHeaderLogo"></a>
+      <a href="shop.html"><img src="image/iconCart.png" alt="This is the logo" class="idleHeaderCart"></a>
+      <div class="idleHeaderDiv">
+        <a href="index.html"><div class="box" onmouseover="grow(10)" onmouseout="shrink(10)"><div class="border" id="big10"></div>Home</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="about.html"><div class="box" onmouseover="grow(8)" onmouseout="shrink(8)"><div class="border" id="big8"></div>About</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="product.html"><div class="box" onmouseover="grow(9)" onmouseout="shrink(9)"><div class="border" id="big9"></div>Product</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="contact.html"><div class="box" onmouseover="grow(11)" onmouseout="shrink(11)"><div class="border" id="big11"></div>Contact</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="shop.html"><div class="box" onmouseover="grow(12)" onmouseout="shrink(12)"><div class="border" id="big12"></div>Shop</div></a>
+      </div>
+    </div>
+
+    <!-- Opening picture -->
+    <center>
+      <div class="openingPic">
+
+        <div class="openingBackground">
+          <img src="image/contactBackground3.png" alt="">
+        </div>
+
+        <div class="openingDiv">
+          <div class="background"></div>
+
+          <img src="image/openingIndex2.jpg" alt="This is a bubble tea shop" id="openingPic2" style="opacity: 0;">
+          <img src="image/openingIndex1.jpg" alt="This is a bubble tea shop" id="openingPic1" >
+
+          <div class="openingCircle"> <div id="circle1"></div><div id="circle2"></div></div>
+        </div>
+      </div>
+    </center>
+
+
+
+      <!-- the about section -->
+      <div class="aboutDiv">
+        <div class="about">
+          <img src="image/aboutPicture.jpg" style="width: 50%;">
+          <h1 class="show-on-scroll title">OUR STORY</h1>
+          <div class="aboutText">
+            Kii is the first brand to introduce a modern twist on the tea culture which originated from Asian. To perfectly match the selected quality tea's from across Asia, we have decided to add a subtle, but enjoyable alcoholic taste. Our fruity series is another inspiration of tea, we select the quality and in-season organic fruits globally which is infused within our freshly brewed tea. <br><br>
+            "Go above and beyond" has always been our spirit and we are dedicated to provide our custormers the new concept of the healthiest and freshest tea!
+          </div>
+        </div>
+
+      </div>
+
+      <!-- video section -->
+      <div class="divVidParent">
+
+        <div class="gradientTop"></div>
+        <div class="videoDiv" controls>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PJhbUX6MkOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>        </div>
+        <div class="backgroundVideo">
+          <img src="image/videoBackground.jpg" alt="" style="width: 100%; display: block;">
+        </div>
+        <div class="show-on-scroll classic videoTitle">CHECK OUT OUR PRODUCTS!!</div>
+
+        <div class="gradientBottom"></div>
+      </div>
+
+      <center>
+
+      <!-- product section -->
+      <div class="productDiv">
+
+        <div class="cover"></div>
+        <table>
+            <tr>
+                <td class="buttonCell" onmouseover="swipeUp(1); overlayBig(1)" onmouseout="swipeDown(1); overlaySmall(1)">
+                    <center>
+                         <a href="productClassic.html"><div class="button">
+                            <div class="buttonText" id="text1">Classic Milk Tea</div>
+                            <div class="buttonIcon" id="icon1"><img src="image/iconTea.png"></div>
+                        </div></a>
+                    </center>
+                </td>
+                <td class="buttonCell" onmouseover="swipeUp(2); overlayBig(2)" onmouseout="swipeDown(2); overlaySmall(2)">
+                    <center>
+                        <a href="productMango.html"><div class="button">
+                            <div class="buttonText" id="text2">Mango</div>
+                            <div class="buttonIcon" id="icon2"><img src="image/iconMango.png"></div>
+                        </div></a>
+                    </center>
+                </td>
+                <td class="buttonCell" onmouseover="swipeUp(3); overlayBig(3)" onmouseout="swipeDown(3); overlaySmall(3)">
+                    <center>
+                        <a href="productTaro.html"><div class="button">
+                            <div class="buttonText" id="text3">Taro</div>
+                            <div class="buttonIcon" id="icon3"><img src="image/iconTaro.png"></div>
+                        </div></a>
+                    </center>
+                </td>
+                <td class="buttonCell" onmouseover="swipeUp(4); overlayBig(4)" onmouseout="swipeDown(4); overlaySmall(4)">
+                    <center>
+                        <a href="productStrawberry.html"><div class="button">
+                            <div class="buttonText" id="text4">Strawberry</div>
+                            <div class="buttonIcon" id="icon4"><img src="image/iconStrawberry.png"></div>
+                        </div></a>
+                    </center>
+                </td>
+                <td class="buttonCell" onmouseover="swipeUp(5); overlayBig(5)" onmouseout="swipeDown(5); overlaySmall(5)">
+                    <center>
+                        <a href="productLychee.html"><div class="button">
+                            <div class="buttonText" id="text5">Lychee</div>
+                            <div class="buttonIcon" id="icon5"><img src="image/iconLychee.svg"></div>
+                        </div></a>
+                    </center>
+                </td>
+                <td class="buttonCell" onmouseover="swipeUp(6); overlayBig(6)" onmouseout="swipeDown(6); overlaySmall(6)">
+                    <center>
+                        <a href="productChocolate.html"><div class="button">
+                            <div class="buttonText" id="text6">Chocolate</div>
+                            <div class="buttonIcon" id="icon6"><img src="image/iconChocolate.png"></div>
+                        </div></a>
+                    </center>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Cover class to prevent animation from exceeding table cell-->
+        <div class="cover2"></div>
+        <br><br>
+
+        <div class="productRow">
+          <div class="productImage show-on-scroll image" onmouseover="up(1)" onmouseout="down(1)" id="product1">
+            <img src="image/designClassic.jpg" style="width: 100%; display: block; transition: 0.5s;" id="productImage1">
+            <div class="black" id="black1"></div>
+            <div class="productOverlay" id="productOverlay1">
+              <div class="productCenter">
+                <img src="image/productOverlayImage.png">
+                <a href="productClassic.html"><div class="productText2">Learn More</div></a>
+              </div>
+            </div>
+          </div>
+          <div class="productImage show-on-scroll image" onmouseover="up(2)" onmouseout="down(2)" id="product2">
+            <img src="image/designMango.jpg" style="width: 100%; display: block; transition: 0.5s;" id="productImage2">
+            <div class="black" id="black2"></div>
+            <div class="productOverlay" id="productOverlay2">
+              <div class="productCenter">
+                <img src="image/productOverlayImage.png">
+                <a href="productMango.html"><div class="productText2">Learn More</div></a>
+              </div>
+            </div>
+          </div>
+          <div class="productImage show-on-scroll image" onmouseover="up(3)" onmouseout="down(3)" id="product3">
+            <img src="image/designTaro.jpg" style="width: 100%; display: block; transition: 0.5s;" id="productImage3">
+            <div class="black" id="black3"></div>
+            <div class="productOverlay" id="productOverlay3">
+              <div class="productCenter">
+                <img src="image/productOverlayImage.png">
+                  <a href="productTaro.html"><div class="productText2">Learn More</div></a>
+              </div>
+            </div>
+           </div>
+        </div>
+
+        <div class="productRow">
+          <div class="productImage show-on-scroll image" onmouseover="up(4)" onmouseout="down(4)" id="product4">
+            <img src="image/designStrawberry.jpg" style="width: 100%; display: block; transition: 0.5s;" id="productImage4">
+            <div class="black" id="black4"></div>
+            <div class="productOverlay" id="productOverlay4">
+              <div class="productCenter">
+                <img src="image/productOverlayImage.png">
+                <a href="productStrawberry.html"><div class="productText2">Learn More</div></a>
+              </div>
+            </div>
+            </div>
+          <div class="productImage show-on-scroll image" onmouseover="up(5)" onmouseout="down(5)" id="product5">
+            <img src="image/designLychee.jpg" style="width: 100%; display: block; transition: 0.5s;" id="productImage5">
+            <div class="black" id="black5"></div>
+            <div class="productOverlay" id="productOverlay5">
+              <div class="productCenter">
+                <img src="image/productOverlayImage.png">
+                <a href="productLychee.html"><div class="productText2">Learn More</div></a>
+              </div>
+            </div>
+          </div>
+          <div class="productImage show-on-scroll image" onmouseover="up(6)" onmouseout="down(6)" id="product6">
+            <img src="image/designChocolate.jpg" style="width: 100%; display: block; transition: 0.5s;" id="productImage6">
+            <div class="black" id="black6"></div>
+            <div class="productOverlay" id="productOverlay6">
+              <div class="productCenter">
+                <img src="image/productOverlayImage.png">
+                <a href="productChocolate.html"><div class="productText2">Learn More</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <!-- div part of website -->
+    <div class="divParent">
+      <div class="gradientTop"></div>
+
+      <div class="divImage show-on-scroll ">
+        <img src="image/divBackground.jpg" style="width: 100%; display: block;">
+      </div>
+
+      <div class="divSubparent">
+        <div class="divOne">
+          <div class="divOneText">
+            <h2>Taste</h2>
+            We pursure the highest standard of texture and taste.
+          </div>
+        </div>
+        <div class="divTwo"> <img src="image/aboutPicture.jpg" class="divPhoto" style="top: 225%; left: 80%; width: 80%;"> </div>
+      </div>
+
+      <div class="divSubparent">
+        <div class="divOne">
+          <div class="divOneText">
+            <h2>Healthy</h2>
+            We insist on providing natural and fresh ingredients for our drinks, you can find healthy bubble tea only at KII.
+          </div>
+        </div>
+        <div class="divTwo"> <img src="image/aboutFarm.jpg" class="divPhoto" style="top: 50%; left: 98%; width: 90%;"> </div>
+      </div>
+
+      <div class="divSubparent">
+        <div class="divOne">
+          <div class="divOneText">
+            <h2>Pure</h2>
+            A pure lifestyle and product that is true to our hearts.
+          </div>
+        </div>
+        <div class="divTwo"> <img src="image/aboutHealthy.jpg" class="divPhoto" style="top: 55%; left: 83%; width: 60%;"> </div>
+      </div>
+
+      <div class="gradientBottom"></div>
+    </div>
+
+    <!-- process section -->
+      <div class="homeShop">
+        <div class="shopContainer show-on-scroll ">
+          <div class="shopDiv2"><img src="image/process.jpg"></div>
+          <div class="shopDiv1"></div>
+          <div class="shopText">
+             <h1>Our Shop</h1>
+             Do you want the freshest and healthiest option on the market, visit our shop to find the products you seek! We hope to provide you with the best customer service so if any you have any questions on shipping, prices etc. Please do not hesitate contacting us using the information on the contact page. <br> <br>
+
+            <div style="color:#B56E5F; font-size: 1vw;">*as a result of the pandemic, we only sell in bulk to minimize travel costs. Thank you for your cooperation.</div>
+            <a href="shop.html"><div class="shopBuy">Learn More</div></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+          <div class="footerBackground"> <img src="image/footerBackground.png" alt="" style="width: 50%;"> </div>
+          <div class="footerImg">
+            <img src="image/letter2.png" style="height: 100%">
+          </div>
+          <div class="footerContent">
+            <a href="https://www.facebook.com/uwkonja" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/company/kii-beverages/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/uwkonja/" class="fa fa-instagram"></a> <br>
+            &#169; 2020 KII | created by Daniel Chen
+          </div>
+        </div>
+      </footer>
+
+    <script src="javascript/index.js"></script>
+    <script type="text/javascript">
+  // appearing functions
+  var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60)};
+  var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+  function loop() {
+    Array.prototype.forEach.call(elementsToShow, function(element){
+        if (isElementInViewport(element)) {
+          element.classList.add('is-visible');
+        }
+      });
+      scroll(loop);
+    }
+
+    // Call the loop for the first time
+    loop();
+
+    // Helper function from: http://stackoverflow.com/a/7557433/274826
+  function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom >= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }
+
+    </script>
+  </body>
+</html>

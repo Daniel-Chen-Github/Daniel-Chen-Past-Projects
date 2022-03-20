@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+    <title>Ratings</title>
+    <style media="screen">
+    body {
+      font-family: 'Quicksand';
+      font-size: 15px;
+      margin : 0;
+      background-color: #414B61;
+    }
+    * {
+    box-sizing: border-box;
+  }
+  .main {
+    animation: transitionIn 0.4s;
+  }
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to {
+      opacity:1;
+      transform: rotateX(0);
+    }
+  }
+
+  header {
+    background-color: #333;
+    min-height: 115px;
+    width: 100%;
+    color : white;
+  }
+  footer {
+    height : 220px;
+    background-color: #686868 ;
+    color : white;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-top : 40px;
+  }
+  footer a{
+    color : white;
+    text-decoration: none;
+  }
+  footer a:hover{
+    color : black;
+  }
+  .heeder {
+    width: 100%;
+    margin-bottom: -10px;
+    float : left;
+    padding : 10px;
+  }
+  .sub {
+    width: 100%;
+    background-color: #7E7E7E;
+    color : black;
+    margin-bottom: 15px;
+  }
+  .sub a{
+    color : black;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .sub a:hover {
+    color : white;
+    border-color: white;
+
+  }
+   .subText {
+     display : inline-block;
+     margin : 10px 5px 10px 40px;
+     float : left;
+   }
+   .subText1 {
+     display : inline-block;
+     margin : 10px 40px 10px 0px;
+     float : right;
+   }
+
+  /* The grid: Three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 32%;
+    padding: 15px;
+    margin : 20px 10px 15px 10px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color :#393939;
+    transition: 0.3s;
+  }
+    .column:hover {
+      transform: scale(1.02);
+    }
+  .containerTab {
+    padding: 20px;
+    color: white;
+    margin : -5px 8px 8px 8px;
+  }
+
+  /* Clear floats after the columns (create space for other objects to come)*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding : 5px;
+  }
+
+  /* Closable button inside the container tab */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+    .info {
+      max-width: 45%;
+      float : left;
+      margin : 20px;
+      padding : 10px;
+      font-size: 20px;
+    }
+    .vertical {
+      border-radius: 1em;
+      border : 1px solid #A7A7A7;
+      background-color : #A7A7A7;
+      height : 45px;
+      margin: 5px -20px 0px 15px;
+      display: inline-block;
+      float : left;
+    }
+    .title {
+      width: 45%;
+      background-color: #616161;
+      color : white;
+      margin : 10px;
+      margin-top: 15px;
+      text-align: center;
+      padding : 10px 0px 10px 0px;
+      font-size: 40px;
+    }
+    .container {
+      padding-top: 10px;
+      margin: 100px 5px 5px 5px;
+    }
+    .review a{
+      color : white;
+      float : left;
+      text-decoration: none;
+      border-bottom: 3px solid white;
+      transition: 0.3s;
+    }
+    .review a:hover {
+      color : #B4E5C8;
+      float: left;
+      text-decoration: none;
+      background-color: black;
+      border-bottom: 3px solid #B4E5C8;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="heeder">
+        <h1 style="margin-left : 40px; display : inline-block;">Bao's Computer Shoop Top Suggestions</h1>
+        <h4 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px;">Made by the legend Ray Bao himeeeself</h4>
+        <div class="sub row">
+        <a href="Ratings.html"><h2 class="subText"><span style="border-bottom : 2px solid black;">Top Choices</spam></h2></a>
+        <table class="vertical">
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        <a href="computerParts.html"><h2 class="subText"><span style="border-bottom : 2px solid black;">What makes a computer?</span></h2></a>
+        <a href="Index.html"><h2 class="subText1"><span style="border-bottom : 2px solid black;">Go back home</span></h2></a>
+      </div>
+      </div>
+    </header>
+          <a href="#" name="uno"></a>
+    <div class="main">
+<div class="container" style="background-color : white;">
+<center>
+     <h1 class="title">Top 3 Laptops</h1>
+   </center>
+    <!-- Three columns -->
+    <div class="row">
+      <div class="column" onclick="openTab('b1');">
+        <img src="Image/1.jpg" alt="This is the first laptop" style="width : 100%; height : 300px;">
+        <h2 style="padding : 15px;">Lenovo ThinkPad X1 Carbon</h2>
+      </div>
+      <div class="column" onclick="openTab('b2');">
+        <img src="Image/2.jpg" alt="This is the second laptop" style="width : 100%; height : 300px;">
+        <h2 style="padding : 15px;">Apple MacBook Pro (2019)</h2>
+      </div>
+      <div class="column" onclick="openTab('b3');">
+        <img src="Image/3.jpg" alt="This is the third laptop" style="width : 100%; height : 300px;">
+        <h2 style="padding : 15px;">HP EliteBook x360 1030 G3</h2>
+      </div>
+    </div>
+
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b1" class="containerTab row" style="display:none;background: #9A9A9A;">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/1.jpg" alt="This is the first laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">Lenovo ThinkPad X1</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 12px;">This business laptop (almost) has it all</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: Intel Core i5/Core i7 |
+          GPU: Intel UHD 620 | RAM: 8GB/16GB | Storage: 256GB/512GB/1TB SSD |
+          Display: 14-inch, 1080p or 4K | Size: 12.7 x 8.5 x 0.6 inches |
+          Weight: 2.5 pounds</p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px;  padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Attractive, lightweight chassis</li>
+                  <li>Best-in-class keyboard</li>
+                  <li>Long battery life (on 1080p model)</li>
+                  <li>Bright, vivid display options</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>No microSD card slot</li>
+                  <li>4K model has short battery life</li>
+                  <li>Top configs get pricey</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $1,079.99 on Amazon, Lenovo made our favorite business
+            laptop even better by improving its speakers and adding some useful security features,
+            including a webcam shutter and IR camera. On top of that, you get fast performance,
+            long battery life (on the 1080p model) and two gorgeous, 1080p and 4K display options,
+            all in an impossibly lightweight chassis. But it's still those classic ThinkPad features —  a
+             durable design, best-in-class keyboard and stealthy black/red aesthetics — that carry the X1 Carbon to greatness.</p>
+             <div class="review">
+             <a href="https://www.techradar.com/reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/lenovo-thinkpad-x1-carbon-review-1207904/review">
+             Click here for full review</a>
+           </div>
+      </div>
+    </div>
+
+    <div id="b2" class="containerTab row" style="display:none;background: #9A9A9A ">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/2.jpg" alt="This is the second laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">Apple MacBook Pro</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 12px;">The best MacBook Pro ever</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: Intel Core i7/Core i9 |
+          GPU: Radeon Pro 555X/Pro 560X/Pro Vega 16/Pro Vega 20 |
+          RAM: 16GB/32GB | Storage: 512GB/1TB/2TB/4TB | Display: 15.4-inch, 2880-1800-pixel |
+          Size: 13.8 x 9.5 x 0.6 inches | Weight: 4 pounds</p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px;  padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Blisteringperformance</li>
+                  <li>Sharp, vivid display</li>
+                  <li>Powerful audio</li>
+                  <li>Long battery life</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Very expensive</li>
+                  <li>Keyboard isn't great</li>
+                  <li>No USB Type-A ports</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $2,540.00 on ebay, the latest 15-inch MacBook Pro is pricey but extremely powerful.
+            Performance is where the MacBook Pro really stands out from the crowd.
+            With up to a Core i9-9980HK CPU and 32GB of RAM, this sleek productivity machine can handle some serious number crunching.
+            Not to mention the breathtaking speed of its record-breaking SSD.
+            And like the MacBook Pros before it, the 2019 model has a sharp, vivid display,
+            great speakers and long battery life (10+ hours). </p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/macbook-pro">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+
+    <div id="b3" class="containerTab row" style="display:none;background: #9A9A9A ">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/3.jpg" alt="This is the third laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">HP EliteBook</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 12px;">An elegant solution for business computing on the move</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: Intel Core i5/Core i7 |
+          GPU: Intel UHD 620 | RAM: 8GB/16GB |
+          Storage: 128GB/256GB/512GB/1TB/2TB | Display: 13.3-inch, 1080p or 4K |
+          Size: 12 x 8.1 x 0.6 inches | Weight: 2.8 pounds</p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px; padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Sleek Design</li>
+                  <li>Gorgeous Display</li>
+                  <li>Comfortable Keyboard</li>
+                  <li>Solid Audio</li>
+                  <li>Fast SSD</li>
+                  <li>Long Battery Life</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Competing Laptops are Faster</li>
+                  <li>Expensive</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $949 on Amazon, The HP EliteBook x360 1030 G3 is the complete package.
+            Its aluminum chassis is not only thin and lightweight, but it's also durable to military-grade specifications.
+            Not to mention, the business laptop's sturdy yet flexible hinge allows the gorgeous 13.3-inch, 1080p display to rotate back into tablet mode.
+            Aside from its stylish looks, the EliteBook x360 1030 G3 has a comfortable keyboard, long battery life and a fast hard drive. </p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/hp-elitebook-x360-1030-g2">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+<a href="#" name="dos"></a>
+<div class="container" style="background-color : #D5D6D8">
+    <center>
+         <h1 class="title">Top 3 Desktops</h1>
+       </center>
+
+    <div class="row">
+      <div class="column" onclick="openTab('b7');">
+        <img src="Image/Dell.jpg" alt="This is the first laptop" style="width : 100%; height : 300px;">
+        <h2 style="padding : 15px;">Dell XPS Tower</h2>
+      </div>
+      <div class="column" onclick="openTab('b8');">
+        <img src="Image/Desktop1.jpg" alt="This is the second laptop" style="width : 100%; height : 300px;">
+        <h2 style="padding : 15px;">Alienware Aurora R8</h2>
+      </div>
+      <div class="column" onclick="openTab('b9');">
+        <img src="Image/Desktop2.jpg" alt="This is the third laptop" style="width : 100%; height : 300px;">
+        <h2 style="padding : 15px;">HP Omen Desktop PC</h2>
+      </div>
+    </div>
+
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b7" class="containerTab row" style="display:none;background: #9A9A9A ">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/Dell.jpg" alt="This is the best desktop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">Dell XPS Tower</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 12px;">A VR-capable desktop PC for the everyman</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: 9th Gen Intel® Core™ i9 9900 (8-Core, 16MB Cache, up to 5GHz with Intel® Turbo Boost Technology)|
+          GPU: NVIDIA® GeForce RTX™ 2060 6GB GDDR6 |
+          RAM: 8GB DDR4 at 2400MHz; up to 32GB  | Storage: 512GB/1TB/2TB/4TB | Ports: 16 ports including SD card Slot, USBC etc.</p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px;  padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Compact, minimalist designe</li>
+                  <li>Full online customer support</li>
+                  <li>Capacble of upgrades</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Starting memory isn't ideal for VR</li>
+                  <li>Lower graphical performance compared to rivals</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at 1,245.00 on Amazon, The Dell XPS Tower looks unremarkable,
+            like that PC your parents used to have hidden away underneath the desk when you were a kid.
+            However, its no-nonsense chassis hides quite a selection of exciting internals.
+            One of the best PCs right now, the Dell XPS Tower is packed with up to an RTX 2070 graphics card,
+            a 9th-generation Intel Core processor, and a large hard drive and/or SSD.
+            This special edition PC configuration is only available in the US. However,
+            UK and Australian readers can grab the regular Dell XPS Tower and then add similar upgrades,
+            though there are some limitations such as the graphics card options topping out with the GTX 1060. </p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/dell-xps-tower-special-edition">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+
+    <div id="b8" class="containerTab row" style="display:none;background: #9A9A9A ">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/Desktop1.jpg" alt="This is the second laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">Alienware Aurora R8</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 12px;">The perfect entry into high-end gaming</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: 3.6GHz Intel Core i7-9700K (8-core, 12MB cache, up to 4.9GHz) | Graphics: Nvidia GeForce RTX 2080 (8GB GDDR6)
+          | RAM: 32GB DDR4 SDRAM | Motherboard: micro-ATX with Intel Z370 Express Chipset
+          | Power Supply: Alienware 850-Watt Multi-GPU Approved | Storage: 512GB NVMe SSD, 1TB HDD | Over 15 ports
+           | Weight: 32.67 pounds (14.819kg) | Size: 8.35 x 14.19 x 18.6 inches</p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px;  padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Plenty of computing power</li>
+                  <li>Cutting edge components</li>
+                  <li>Lots of ports</li>
+                  <li>Looks really nice</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Not quite ready for 4K gaming</li>
+                  <li>Pricing is just OK</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $1,988.00 on Amazon, While costing a pretty penny when souped up,
+            the Alienware Aurora R8 has all the makings of a powerful gaming PC,
+            including 9th-generation Intel Core chips and some of the best Nvidia GTX and RTX graphics for gaming.
+            This model has been succeeded by the Alienware Aurora R9, which boasts a cool-looking exterior,
+            but their specs are practically comparable.
+            Only, the R8 will set you back a couple of hundred dollars/pounds less, giving you more for your money.
+            Get ready to be impressed by this PCs’ 1440p gaming performance.</p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/alienware-aurora-r8">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+
+    <div id="b9" class="containerTab row" style="display:none;background: #9A9A9A ">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/Desktop2.jpg" alt="This is the third laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">HP Omen Desktop</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 10px;">One gaming PC powerhouse that’s worth the price</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: 3.6GHz Intel Core i7-9700K (8-core, 12MB cache, up to 4.9GHz) | Graphics: Nvidia GeForce RTX 2080 (8GB GDDR6)
+            | RAM: 32GB DDR4 SDRAM | Motherboard: micro-ATX with Intel Z370 Express Chipset
+             | Power Supply: Alienware 850-Watt Multi-GPU Approved | Storage: 512GB NVMe SSD, 1TB HDD | Weight: 30.2 pounds (13.7 kg)
+              | Size: 18.75 x 18.5 x 7.5 inches</p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px; padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>High powered</li>
+                  <li>Highly upgradable</li>
+                  <li>Up to 165Hz refresh rates</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Not the best looking PC</li>
+                  <li>Ok Pricing</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $1,679.00 on Amazon,  this gaming PC sports might only be for some,
+            there’s definitely something for everybody as far as configurations go –
+            whether you’re a casual gamer on a budget or a hardcore one willing to drop a lot of dough for a souped up rig.
+            At less than $1,500 (about £1,180, AU$2,170),
+            you’re getting more than enough power to get you through AAA games,
+            albeit probably not on Ultra. At $2,335 (about £1,835, AU$3,235) or more,
+            you’re getting a considerable amount of power and storage.
+            Plus, HP Omen Desktop PC comes in a tool-less design, making it upgradeable.
+            There isn’t any doubt that this one belongs on our best gaming PCs list. </p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/hp-omen-desktop-pc">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<a href="#" name="tri"></a>
+<div class="container" style="background-color: #AFAFAF">
+    <center>
+         <h1 class="title">Top 3 Chromebooks</h1>
+       </center>
+
+
+
+    <div class="row">
+      <div class="column" onclick="openTab('b4');">
+        <img src="Image/Google.jpg" alt="This is the first laptop" style="width : 100%; height : 300px;">
+        <h2 style="margin-bottom : 75px;">Google Pixel Go</h2>
+      </div>
+      <div class="column" onclick="openTab('b5');">
+        <img src="Image/Chromebook1.jpg" alt="This is the second laptop" style="width : 100%; height : 300px;">
+        <h2 style="margin-bottom : 75px;">Asus Chromebook Flip</h2>
+      </div>
+      <div class="column" onclick="openTab('b6');">
+        <img src="Image/Chromebook2.jpg" alt="This is the third laptop" style="width : 100%; height : 300px;">
+        <h2 style="margin-bottom : 30px;">Samsung Chromebook Pro</h2>
+      </div>
+    </div>
+
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b4" class="containerTab row" style="display:none;background: #9A9A9A;">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/Google.jpg" alt="This is the third laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">Google Pixel Go</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 12px;">The best Chromebook for the rest of us</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: Intel Core m3 - Intel Core i7 | Graphics: Intel UHD Graphics 615
+          | RAM: 8GB - 16GB | Screen: 13.3-inch Full HD (1,920 x 1,080) or 4K LCD touchscreen
+          | Storage: 128GB - 256GB eMMC | Weight: 2.3 pounds</p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px; padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Incredible battery life</li>
+                  <li>Amazing ‘Hush’ keyboard</li>
+                  <li>Comfortable Keyboard</li>
+                  <li>Rare 1080p webcam</li>
+                  <li>Excellent design</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Iffy pricing at mid- to- high-end</li>
+                  <li>No biometric login</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $879 on Amazon, Google continues its tradition of making the best Chromebooks in the world.
+            While it's older Pixelbook used to occupy the top spot in our best Chromebooks list,
+            it's been replaced by Google's latest Chromebook: the Pixelbook Go.
+            This is a Chromebook that proves that these devices can be just as stylish and powerful as traditional laptops,
+            and the Pixelbook Go brings a lot of the original Pixelbook's premium features to a more affordable device.
+            It also features a fantastic battery life and a brilliant keyboard that makes typing on a pleasure. </p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/google-pixelbook-go-review">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+
+    <div id="b5" class="containerTab row" style="display:none;background: #9A9A9A ">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/Chromebook1.jpg" alt="This is the second laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">Asus Chromebook</h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 12px;">The premium Chromebook is finally affordable</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: Intel Pentium 4405Y – Intel Core m3-6Y30 |
+          Graphics: Intel HD Graphics 515 | RAM: 4GB |
+          Screen: 12.5-inch, FHD (1,920 x 1,080) LED backlit anti-glare |
+          Storage: 32GB – 64GB eMMC | Weight: 2.6 pounds (1.18kg) | Size: 13 x 9.1 x 0.9 inches </p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px;  padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Elegant tablet mode</li>
+                  <li>Gorgeous, vivid screen</li>
+                  <li>Tactile keyboard</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Middling speakers</li>
+                  <li>No out-of-box Android app support</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $816 on Amazon, the Asus chromebook flip is a very popular item on the market.
+            Before Google rolled out the Pixelbook, and showed us exactly what the best Chromebooks should be,
+            the Asus Chromebook Flip was the Google laptop a lot of Google laptops aspired to be.
+            With a full Intel Core processor and a full-HD display, the Asus Chromebook Flip was certainly a game-changer.
+            These days, in the shadow of Google Pixelbook, the Asus Chromebook Flip is the best Chromebook for you if you want the Pixelbook’s key features,
+            but cannot afford its steep price. If you're on a budget, this is one of the best Asus laptops to consider</p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/asus-chromebook-flip-c302">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+
+    <div id="b6" class="containerTab row" style="display:none;background: #9A9A9A ">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img src="Image/Chromebook2.jpg" alt="This is the third laptop" style="width : 45%; border : 5px solid #CFCFCF; border-radius : 15px; float : left;">
+      <div class="info">
+        <h1 style="margin-top : -30px; display : inline-block;">Samsung Chromebook </h1>
+        <h6 style="font-family : 'Gloria Hallelujah'; display : inline-block; margin-left : 5px; font-size : 10px;">The next-generation Chromebook is here</h6>
+        <h2 style="margin : 0px 0px 0px 0px;">Computer Details : </h2>
+        <p>CPU: 0.99Ghz Intel Core m3-6Y30 | Graphics: Intel HD Graphics 515 | RAM: 4GB
+          | Screen: 12.3-inch, QHD (2,400 x 1,600) touchscreen | Storage: 32GB eMMC | Weight: 2.38 pounds (1.08kg) | Size: 11.06 x 8.72 x 0.51-0.55 inches
+      </p>
+          <table align="center" style="min-width : 400px; border : 1px solid black;">
+            <tr>
+              <th colspan="4" align="center" style="font-size : 25px; padding-top : 10px;">Advantages and Disadvantages</th>
+            </tr>
+            <tr>
+              <td align="center"><b>Advantages<b/></td>
+              <td align="center"><b>Disadvantages</b></td>
+            </tr>
+            <tr>
+              <td>
+                <ul style="list-style-image: url(Image/Plus.png); ">
+                  <li>Stunning, vivid screen</li>
+                  <li>Stylus support on Chrome OS</li>
+                  <li>Gorgeous, simple design</li>
+                </ul>
+              </td>
+              <td valign="top">
+                <ul style="list-style-image: url(Image/Minus1.png);">
+                  <li>Cramped keyboard</li>
+                  <li>9 hours max battery life</li>
+                  <li>Weak speakers</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <h2 style="margin : 0px 0px 0px 0px;">Description : </h2>
+          <p>Starting at $993 on Amazon, the Samsung Chromebook Pro is getting a lot of attention inside of the market.
+            When the best Chromebooks finally supported Android apps,
+            it was only a matter of time before Samsung threw its hat into the ring.
+            The manufacturer designed a Chromebook that’s as stunning as it is powerful.
+            With a 12.3-inch QHD touchscreen and a 360-degree hinge, the Samsung Chromebook Pro also has a built-in stylus –
+            the first of its kind to show up in a Chromebook. This laptop gives many of its rivals,
+            including includes most Android devices, a run for their money,
+            even if its keyboard could use a bit of tightening up.  </p>
+            <div class="review">
+            <a href="https://www.techradar.com/reviews/samsung-chromebook-pro">
+            Click here for full review</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="foter">
+    <div style="float : left;">
+    <ul>
+      <li style="list-style-type : none;"><u>Connect</u></li>
+      <li style="list-style-type : none;"><br></li>
+      <li><a href="https://www.instagram.com/ray_of._.sunshine/">Google</a></li>
+      <li><a href="https://www.youtube.com/user/bwf">Instagram</a></li>
+      <li><a href="https://www.google.com/search?q=ray+bao&oq=ray+bao&aqs=chrome..69i59l3j69i57j69i59j69i60.2647j0j7&sourceid=chrome&ie=UTF-8">Youtube</a></li>
+      <li><a href="https://www.linkedin.com/in/raybao/">LinkIn</a></li>
+    </ul>
+  </div>
+  <div style="float : left;">
+  <ul>
+    <li style="list-style-type : none;"><u>Contact</u></li>
+    <li style="list-style-type : none;"><br></li>
+    <li>613 849 3829</li>
+    <li>raybaoshop@matthew'sgmail.com</li>
+    <li>Bao's Computer Shoop</li>
+    <li style="list-style-type : none;"><br></li>
+    <li>729 Matthew Circle,</li>
+    <li>Toronto, Ontario K3U N8H</li>
+  </ul>
+  </div>
+  <div style="float : left;">
+  <ul>
+    <li style="list-style-type : none;"><u>Top Patreons</u></li>
+    <li style="list-style-type : none;"><br></li>
+    <li>Matthew Meh</li>
+    <li>Quaker Oats</li>
+    <li>Ehma Hueng</li>
+    <li>Adem Yeh</li>
+    <li>Denial Chern</li>
+  </ul>
+  </div>
+      <div style="float : right; margin-right : 20px;">
+    <p>&#169; Bao's Computer SHOOOOOOOOOOPPPPPPPPPP Company owo</p>
+  </div>
+  </footer>
+</div>
+<script>
+/*script is too open the tab*/
+/*Hides all tabs except the one that is open*/
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+  </body>
+</html>

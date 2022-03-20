@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Mango | KII Beverages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/productFlavors.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+  </head>
+  <body>
+    <script src="javascript/index.js"></script>
+
+    <!-- idle header -->
+    <div class="idleHeader">
+      <div class="headerImageBackground"><img src="image/headerbackground.png" style="width: 100%;"></div>
+      <a href="index.html"><img src="image/letter3.png" alt="This is the logo" class="idleHeaderLogo"></a>
+      <a href="shop.html"><img src="image/iconCart.png" alt="This is the logo" class="idleHeaderCart"></a>
+      <div class="idleHeaderDiv">
+        <a href="index.html"><div class="box" onmouseover="grow(10)" onmouseout="shrink(10)"><div class="border" id="big10"></div>Home</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="about.html"><div class="box" onmouseover="grow(8)" onmouseout="shrink(8)"><div class="border" id="big8"></div>About</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="product.html"><div class="box" onmouseover="grow(9)" onmouseout="shrink(9)"><div class="border" id="big9"></div>Product</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="contact.html"><div class="box" onmouseover="grow(11)" onmouseout="shrink(11)"><div class="border" id="big11"></div>Contact</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="shop.html"><div class="box" onmouseover="grow(12)" onmouseout="shrink(12)"><div class="border" id="big12"></div>Shop</div></a>
+      </div>
+    </div>
+
+    <div class="opening">
+      <div class="arrow" onclick="backward()"><img src="image/arrow1.png" style="width: 100%;"> </div>
+      <div class="arrow" onclick="forward()"><img src="image/arrow.png" style="width: 100%;"> </div>
+      <div class="imageBackground"><img src="image/productBackground.jpg" style="width: 100%;"></div>
+      <div class="openingImage" id="can0"><img src="image/canClassic.png" style="width: 100%;"></div>
+      <div class="openingImage" id="can1" style="opacity: 1;"><img src="image/canMango.png" style="width: 100%;"></div>
+      <div class="openingImage" id="can2"><img src="image/canTaro.png" style="width: 100%;"></div>
+      <div class="openingImage" id="can3"><img src="image/canStrawberry.png" style="width: 100%;"></div>
+      <div class="openingImage" id="can4"><img src="image/canLychee.png" style="width: 100%;"></div>
+      <div class="openingImage" id="can5"><img src="image/canChocolate.png" style="width: 100%;"></div>
+    </div>
+
+    <div class="description1">
+      <div class="descriptionTitle1" id="title1" style="color: #E89E32; text-shadow: 2px 2px #B17723;">Mango Milk Tea</div>
+      <div class="descriptionText1" id="text1" style="color: #B17723;">
+KII's mango milk tea has the crisp, bright taste of fresh mangoes and high quality milk tea; nothing else. Brewed from natural high grade tea's from across Asia, KII's mango milk tea is the most enjoyable and highest of quality alcoholic beverage on the market. Pure and natural, just as we intended. KII's mango milk tea is the perfect beverage for a gathering with friends. Ingredients: chai tea, natural mango, creamers (milk, half and half, heavy cream), simple syrup. Alcohol percentage = 5%      </div>
+      <a href="shop.html"><div class="buyNow" onmouseover="show()" onmouseout="noshow()" id="button"><div class="buttonOverlay" id="buttonOverlay"></div> Buy Now</div></a>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footerBackground"> <img src="image/footerBackground.png" alt="" style="width: 50%;"> </div>
+        <div class="footerImg">
+          <img src="image/letter2.png" style="height: 100%">
+        </div>
+        <div class="footerContent">
+          <a href="https://www.facebook.com/uwkonja" class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/company/kii-beverages/" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/uwkonja/" class="fa fa-instagram"></a> <br>
+          &#169; 2020 KII | created by Daniel Chen
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript/productFlavors.js"></script>
+  </body>
+</html>

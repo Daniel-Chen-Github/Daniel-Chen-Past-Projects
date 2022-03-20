@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shop | KII Beverages</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+  </head>
+  <body>
+    <script src="javascript/store.js"></script>
+    <div class="storeOverlay" id="storeOverlay"></div>
+
+    <div class="warning" id="warning">
+      <u><h2>Warning</h2></u>
+      If you want to continue to another website, your cart will clear itself.
+      Would you like to continue? <br>
+      <p>*Your current shop has <b><u id="hello" style="color: black;">0</u></b> items</p>
+      <div onmouseover="show(1)" onmouseout="noshow(1)" id="button1" onclick="yes()"><div class="buttonOverlay" id="buttonOverlay1"></div>Yes</div>
+      <div style="margin-left: 3vw;" onmouseover="show(2)" onmouseout="noshow(2)" id="button2" onclick="no()"><div class="buttonOverlay" id="buttonOverlay2"></div>No</div>
+    </div>
+
+    <!-- idle header -->
+    <div class="idleHeader">
+      <div class="headerImageBackground"><img src="image/headerbackground.png" style="width: 100%;"></div>
+      <img src="image/letter3.png" alt="This is the logo" class="idleHeaderLogo" onclick="link(1, 0)">
+      <img src="image/iconCart.png" class="idleHeaderCart" onclick="inventory()">
+      <div class="idleHeaderDiv">
+        <div class="box" onmouseover="grow(10)" onmouseout="shrink(10)" onclick="link(1, 0)"><div class="border" id="big10"></div>Home</div>
+      </div>
+      <div class="idleHeaderDiv">
+        <div class="box" onmouseover="grow(8)" onmouseout="shrink(8)" onclick="link(2, 0)"><div class="border" id="big8"></div>About</div>
+      </div>
+      <div class="idleHeaderDiv">
+        <div class="box" onmouseover="grow(9)" onmouseout="shrink(9)" onclick="link(3, 0)"><div class="border" id="big9"></div>Product</div>
+      </div>
+      <div class="idleHeaderDiv">
+        <div class="box" onmouseover="grow(11)" onmouseout="shrink(11)" onclick="link(4, 0)"><div class="border" id="big11"></div>Contact</div>
+      </div>
+      <div class="idleHeaderDiv">
+        <div class="box"><div class="border" id="big12" style="width: 100%;"></div>Shop</div>
+      </div>
+    </div>
+
+    <a href="index.html" id="src1"></a>
+    <a href="about.html" id="src2"></a>
+    <a href="product.html" id="src3"></a>
+    <a href="contact.html" id="src4"></a>
+
+      <!-- opening picture -->
+      <div class="startingPic">
+        <img src="image/openingShop.jpg" alt="">
+        <div class="overlay"></div>
+        <div><u>Store</u></div>
+      </div>
+
+      <!-- product div -->
+      <div class="shopDiv">
+        <img src="image/canClassic.png">
+
+        <div class="decript color6">
+          <h2>Classic Milk Tea</h2> <b>$32.99</b> / 6 x 12oz <br><br>
+          Our classic milk tea - inspired by brand names and crafted in the tradition of our delicious tea - is light, refreshing, and authentic. Enjoy chilled from the can or over ice.
+        </div>
+        <div class="buyDiv">
+          <form action="index.html">
+            <select class="shopForm" id="choice1">
+              <option value="Quantity">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </form>
+          <div class="buyButton" onclick="inventory(); cart('classic', 1)">
+            <div class="centerButton">Add to cart</div>
+          </div>
+        </div>
+      </div>
+      <div class="shopDiv1">
+        <img src="image/canMango.png">
+
+        <div class="decript1 color1">
+          <h2>Mango Milk Tea</h2> <b>$37.99</b> / 6 x 12oz <br><br>
+          Our mango milk tea - inspired by brand names and crafted in the tradition of our delicious tea - is light, refreshing, and authentic. Enjoy chilled from the can or over ice.
+        </div>
+        <div class="buyDiv1">
+          <form action="index.html">
+            <select class="shopForm1" id="choice2">
+              <option value="Quantity">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </form>
+          <div class="buyButton1" onclick="inventory(); cart('mango', 2)">
+            <div class="centerButton">Add to cart</div>
+          </div>
+        </div>
+      </div>
+      <div class="shopDiv">
+        <img src="image/canTaro.png">
+
+        <div class="decript color2">
+          <h2>Saitomo Milk Tea</h2> <b>$41.99</b> / 6 x 12oz <br><br>
+          Our taro milk tea - inspired by brand names and crafted in the tradition of our delicious tea - is light, refreshing, and authentic. Enjoy chilled from the can or over ice.
+        </div>
+        <div class="buyDiv">
+          <form action="index.html">
+            <select class="shopForm" id="choice3">
+              <option value="Quantity">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </form>
+          <div class="buyButton" onclick="inventory(); cart('saitomo', 3)">
+            <div class="centerButton">Add to cart</div>
+          </div>
+        </div>
+      </div>
+      <div class="shopDiv1">
+        <img src="image/canStrawberry.png">
+
+        <div class="decript1 color3">
+          <h2>Ichigo Milk Tea</h2> <b>$37.99</b> / 6 x 12oz <br><br>
+          Our strawberry milk tea - inspired by brand names and crafted in the tradition of our delicious tea - is light, refreshing, and authentic. Enjoy chilled from the can or over ice.
+        </div>
+        <div class="buyDiv1">
+          <form action="index.html">
+            <select class="shopForm1" id="choice4">
+              <option value="Quantity">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </form>
+          <div class="buyButton1" onclick="inventory(); cart('ichigo', 4)">
+            <div class="centerButton">Add to cart</div>
+          </div>
+        </div>
+      </div>
+      <div class="shopDiv">
+        <img src="image/canLychee.png">
+
+        <div class="decript color4">
+          <h2>Raichi Milk Tea</h2> <b>$37.99</b> / 6 x 12oz <br><br>
+          Our lychee milk tea - inspired by brand names and crafted in the tradition of our delicious tea - is light, refreshing, and authentic. Enjoy chilled from the can or over ice.
+        </div>
+        <div class="buyDiv">
+          <form action="index.html">
+            <select class="shopForm" id="choice5">
+              <option value="Quantity">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </form>
+          <div class="buyButton" onclick="inventory(); cart('raichi', 5)">
+            <div class="centerButton">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shopDiv1">
+        <img src="image/canChocolate.png">
+
+        <div class="decript1 color5">
+          <h2>Chokoreto Milk Tea</h2> <b>$37.99</b> / 6 x 12oz <br><br>
+          Our chocolate milk tea - inspired by brand names and crafted in the tradition of our delicious tea - is light, refreshing, and authentic. Enjoy chilled from the can or over ice.
+        </div>
+        <div class="buyDiv1">
+          <form action="index.html">
+            <select class="shopForm1" id="choice6">
+              <option value="Quantity">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </form>
+          <div class="buyButton1" onclick="inventory(); cart('chocolate', 6)">
+            <div class="centerButton">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br><br><br>
+
+      <div class="inventory" id="inventory">
+
+        <img src="image/x.jpg" alt="This is the logo" class="storeX" onclick="closeInventory()">
+        <img src="image/iconCart.png" alt="This is the logo" style="width: 10%">
+
+        <div id="inventoryBody" style="width:100%;">
+          <hr style="margin: 0px;">
+
+        </div>
+
+        <div class="price1">Subtotal</div> <div class="price2" id="price">00.00$</div>
+        <center>
+          <div class="inventoryButton" onclick="checkOut()">Check Out</div>
+          <div style="color: #227EB2; text-decoration: underline; cursor: pointer;" onclick="closeInventory()">Continue Shopping</div>
+        </center>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+          <div class="footerBackground"> <img src="image/footerBackground.png" alt="" style="width: 50%;"> </div>
+          <div class="footerImg">
+            <img src="image/letter2.png" style="height: 100%">
+          </div>
+          <div class="footerContent">
+            <a href="https://www.facebook.com/uwkonja" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/company/kii-beverages/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/uwkonja/" class="fa fa-instagram"></a> <br>
+            &#169; 2020 KII | created by Daniel Chen
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

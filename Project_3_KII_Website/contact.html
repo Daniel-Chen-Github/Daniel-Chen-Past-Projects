@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact | KII Beverages</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+  </head>
+  <body>
+    <script src="javascript/index.js"></script>
+
+    <div class="background1">
+      <img src="image/contactBackground1.jpg" alt="">
+    </div>
+    <div class="background2">
+      <img src="image/contactBackground2.jpg" alt="" style="width: 100%;">
+    </div>
+    <div class="background3">
+      <img src="image/contactBackground3.png" alt="" style="width: 100%;">
+    </div>
+
+    <!-- idle header -->
+    <div class="idleHeader">
+      <div class="headerImageBackground"><img src="image/headerbackground.png" style="width: 100%;"></div>
+      <a href="index.html"><img src="image/letter3.png" alt="This is the logo" class="idleHeaderLogo"></a>
+      <a href="shop.html"><img src="image/iconCart.png" alt="This is the logo" class="idleHeaderCart"></a>
+      <div class="idleHeaderDiv">
+        <a href="index.html"><div class="box" onmouseover="grow(10)" onmouseout="shrink(10)"><div class="border" id="big10"></div>Home</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="about.html"><div class="box" onmouseover="grow(8)" onmouseout="shrink(8)"><div class="border" id="big8"></div>About</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="product.html"><div class="box" onmouseover="grow(9)" onmouseout="shrink(9)"><div class="border" id="big9"></div>Product</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="contact.html"><div class="box" onmouseover="grow(11)" onmouseout="shrink(11)"><div class="border" id="big11"></div>Contact</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="shop.html"><div class="box" onmouseover="grow(12)" onmouseout="shrink(12)"><div class="border" id="big12"></div>Shop</div></a>
+      </div>
+    </div>
+
+    <div class="title"> <div class="titleText">Contact</div></div>
+
+    <br><br><br><br><br><br>
+    <div class="body">
+      <h2>Online Contact Form</h2>
+      <p>If you have any problems or suggestions, don’t hesitate to leave us a message as your valuable opinion is KII's motivation!</p>
+      <input type="text" placeholder="Your Name*" class="input" id="input1">
+      <input type="text" placeholder="Your Email*" class="input" id="input2">
+      <textarea name="name" rows="8" cols="70" placeholder="Your Message*" id="input3"></textarea>
+      <div class="submit" onclick="submit()"><div>SUBMIT</div></div>
+
+      <br> <hr class="hr">
+
+      <h2>Connect with us on social media</h2>
+      <p>Tag us on social media and look out for exclusive promotions!</p>
+      <div class="iconDiv">
+        <a href="https://www.facebook.com/uwkonja" class="fa fa-facebook"></a>  <a href="https://www.facebook.com/uwkonja">www.facebook.com/uwkonja</a>
+      </div>
+      <div class="iconDiv">
+        <a href="https://www.linkedin.com/company/kii-beverages/" class="fa fa-linkedin"></a>  <a href="https://www.linkedin.com/company/kii-beverages/">www.linkedin.com/company/kii-beverages/</a>
+      </div>
+      <div class="iconDiv">
+        <a href="https://www.instagram.com/uwkonja/" class="fa fa-instagram"></a>  <a href="https://www.instagram.com/uwkonja/">www.instagram.com/uwkonja/</a> <br>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footerBackground"> <img src="image/footerBackground.png" alt="" style="width: 50%;"> </div>
+        <div class="footerImg">
+          <img src="image/letter2.png" style="height: 100%">
+        </div>
+        <div class="footerContent">
+          <a href="https://www.facebook.com/uwkonja" class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/company/kii-beverages/" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/uwkonja/" class="fa fa-instagram"></a> <br>
+          &#169; 2020 KII | created by Daniel Chen
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      function submit() {
+        var answer = 0;
+        var val1 = document.getElementById('input1').value
+        var val2 = document.getElementById('input2').value
+        var val3 = document.getElementById('input3').value
+        if (val2.search("@") < 0 || val1.trim() == "" || val3.trim() == "") {
+          alert("Input Error, please enter a valid submission. Please try again.")
+          answer += 1
+        }
+        if (answer == 0) {
+          alert("Message has been sent")
+          document.getElementById('input1').value = ""
+          document.getElementById('input2').value = ""
+          document.getElementById('input3').value = ""
+        }
+      }
+    </script>
+  </body>
+</html>

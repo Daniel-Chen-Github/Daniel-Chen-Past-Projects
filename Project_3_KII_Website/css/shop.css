@@ -1,0 +1,401 @@
+body {
+  overflow-x: hidden;
+  margin: 0px;
+}
+a {
+  color: #685C46;
+  text-decoration: none;
+}
+
+.storeOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  background-color: black;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+.warning {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  z-index: 1001;
+  font-size: 1.5vw;
+  font-family: 'Oswald';
+  text-align: center;
+  background: #FFAB99;
+  padding: 1vw;
+  border: 3px solid #CD7562;
+  box-shadow: 0px 0px 20px rgb(0,0,0,0.5);
+  transition: 0.5s;
+  transform: scale(0,0);
+  transform-origin: center;
+  opacity: 0;
+}
+.warning h2 {
+  margin: 0vw 0vw 1vw 0vw;
+}
+.warning p {
+  color: #853434;
+  margin: 1vw 0vw 0vw 0vw;
+}
+.warning > div {
+  display: inline-block;
+  padding: 0vw 1vw;
+  border: 3px solid black;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.2vw;
+  margin-top: 2vw;
+  font-family: 'Staatliches';
+}
+.buttonOverlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background-color: #404040;
+  transition: 0.5s;
+}
+
+/* classes for the starting picture */
+.startingPic {
+  width: 100%;
+  height: 50vh;
+  overflow-y: hidden;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px black;
+}
+.startingPic img {
+  position: absolute;
+  width: 110%;
+  top: -75%;
+  left: -4.5%;
+}
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.2;
+  z-index: 1;
+}
+.startingPic div {
+  font-family: 'Staatliches';
+  font-size: 5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  letter-spacing: 10px;
+  text-shadow: 5px 2px white;
+  z-index: 2;
+}
+
+/* product div classes */
+.shopDiv, .shopDiv1 {
+  margin: 5% 0% 0% 5%;
+  width: 42.5%;
+  height: 50vh;
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4);
+  display: inline-block;
+  position: relative;
+}
+.shopDiv img {
+  width: 20%;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.shopDiv1 img {
+  width: 20%;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.decript {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'PT Sans Narrow';
+  width: 42%;
+  font-size: 1vw;
+}
+.decript h2 {
+  font-family: 'Bebas Neue';
+  font-size: 2.6vw;
+  margin: 0px;
+}
+.decript b {
+  font-size: 1.5vw;
+}
+
+.buyDiv {
+  position: absolute;
+  left: 84%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+.shopForm {
+  width: 100%;
+  height: 40px;
+  background-color: #E2E2E2;
+  font-family: 'PT Sans Narrow';
+  font-size: 1vw;
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.buyButton {
+  width: 100%;
+  height: 40px;
+  font-family: 'PT Sans Narrow';
+  background-color: #4988A5;
+  position: relative;
+  margin-top: 10%;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: white;
+}
+.centerButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 1.2vw;
+  text-align: center;
+  cursor: pointer;
+}
+.buyButton:hover {
+  background-color: #336B85;
+}
+
+.decript1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'PT Sans Narrow';
+  font-size: 1vw;
+  text-align: right;
+  width: 42%;
+}
+.decript1 h2 {
+  font-family: 'Bebas Neue';
+  font-size: 2.6vw;
+  margin: 0px;
+}
+.decript1 b {
+  font-size: 1.5vw;
+}
+.buyDiv1 {
+  position: absolute;
+  left: 15%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+.shopForm1 {
+  width: 100%;
+  height: 40px;
+  background-color: #E2E2E2;
+  font-family: 'PT Sans Narrow';
+  font-size: 1vw;
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.buyButton1 {
+  width: 100%;
+  height: 40px;
+  font-family: 'PT Sans Narrow';
+  background-color: #4988A5;
+  position: relative;
+  margin-top: 10%;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+.centerButton1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 1.2vw;
+  text-align: center;
+  cursor: pointer;
+}
+.buyButton1:hover {
+  background-color: #336B85;
+}
+
+/* color classes */
+.color1 h2 {
+  color: #E89E32;
+  text-shadow: 2px 2px #B17723;
+}
+.color1 {
+  color: #B17723;
+}
+.color2 h2 {
+  color: #D5AC9C;
+  text-shadow: 2px 2px #B48D7E;
+}
+.color2 {
+  color: #B48D7E;
+}
+.color3 h2 {
+  color: #EF8F6A;
+  text-shadow: 2px 2px #C5785A;
+}
+.color3 {
+  color: #C5785A;
+}
+.color4 h2 {
+  color: #EDE692;
+  text-shadow: 2px 2px #D7D18A;
+}
+.color4 {
+  color: #D7D18A;
+}
+.color5 h2 {
+  color: #D59F18;
+  text-shadow: 2px 2px #AF8315;
+}
+.color5 {
+  color: #AF8315;
+}
+.color6 h2 {
+  color: #EBC976;
+  text-shadow: 2px 2px #C1A664;
+}
+.color6 {
+  color: #C1A664;
+}
+
+/* inventory creation classes */
+.creationBody {
+  width: 100%;
+  height: 16vh;
+  position: relative;
+}
+.creationBody img {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+}
+.creationBody div {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.creationBody div b {
+  font-family: 'Francois One';
+  font-size: 2vw;
+}
+.creationBody div u {
+  color: #256183;
+  cursor: pointer;
+}
+.creationBody div u:hover {
+  color: #143A50;
+  cursor: pointer;
+}
+.creationBody hr {
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  width: 100%;
+}
+.creationBody p {
+  margin:  0px;
+}
+
+/* inventory classes */
+.inventory {
+  position: fixed;
+  top: 50%;
+  right: -80%;
+  width: 20%;
+  transform: translate(0,-50%);
+  height: 100vh;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0px 0px 100px black;
+  padding: 5% 2% 0px 2%;
+  font-family: 'PT Sans Narrow';
+  font-size: 1vw;
+  overflow-y: visible;
+  overflow-x: hidden;
+  transition: 1s;
+}
+.storeX {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 8%;
+  transition: 2s;
+  cursor: pointer;
+}
+.storeX:hover {
+  transform: rotateZ(720deg);
+}
+.price1 {
+  width: 48%;
+  font-size: 1.2vw;
+  font-weight: 800;
+  font-family: 'PT Sans Narrow';
+  display: inline-block;
+  margin-top: 20px;
+}
+.price2 {
+  margin-top: 20px;
+  width: 48%;
+  font-size: 1.2vw;
+  font-family: 'PT Sans Narrow';
+  display: inline-block;
+  font-weight: 800;
+  text-align: right;
+}
+.inventoryButton {
+  background-color: #2B71AC;
+  width: 60%;
+  margin: 20px 0px 10px 0px;
+  padding: 2% 0%;
+  font-size: 1.2vw;
+  font-family: 'PT Sans Narrow';
+  font-weight: 400;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.inventoryButton:hover {
+  background-color: #256183;
+}

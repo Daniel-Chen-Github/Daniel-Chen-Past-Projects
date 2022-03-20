@@ -1,0 +1,474 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  transform-style: preserve-3d;
+}
+a {
+  color: #685C46;
+  text-decoration: none;
+}
+
+/* gradient classes */
+.gradientTop {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background: rgb(255,240,196);
+  background: linear-gradient(180deg, rgba(255,240,196,1) 0%, rgba(255,240,196,0) 100%);
+  height: 20vh;
+  z-index: -1;
+}
+.gradientBottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  background: rgb(255,240,196);
+  background: linear-gradient(0deg, rgba(255,240,196,1) 0%, rgba(255,240,196,0) 100%);
+  height: 20vh;
+  z-index: -1;
+}
+
+/*The opening picture of the home website*/
+.openingBackground {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 80%;
+  transform: rotateY(180deg);
+}
+.openingPic {
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+.openingPic img{
+  width: 100%;
+  margin: 0px;
+  display: block;
+  position: absolute;
+  top: 0;
+  transition: 1s;
+}
+.background {
+  width: 100vw;
+  height: 65vh;
+}
+.openingDiv {
+  box-shadow: 0px 0px 15px black;
+  width: 70%;
+  margin-top: 10vh;
+  overflow: hidden;
+  position: relative;
+}
+.openingCircle {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.openingCircle div {
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  background-color: transparent;
+  border-radius: 15px;
+  display: inline-block;
+  margin-right: 2%;
+  transition: 0.5s;
+}
+.openingCircle div:nth-child(1) {
+  background-color: white;
+}
+
+
+/*the about section*/
+.aboutDiv{
+  background: #FFF0C4;
+  width: 100%;
+  padding: 50px 0px;
+}
+.about {
+  width: 60%;
+  margin: auto;
+  font-family: 'Oswald';
+  font-weight: 500;
+  position: relative;
+}
+.about h1 {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  transform: translate(-50%; -50%);
+  font-size: 7vw;
+  letter-spacing: 15px;
+  text-shadow: 3px 2px #E5C792;
+  font-family: 'Bebas Neue';
+  width: 80%;
+}
+.aboutText {
+  width: 30%;
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  font-size: 1.2vw;
+}
+
+/* video section */
+.divVidParent {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+}
+.videoDiv {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 48vw;
+  height:27vw;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: #F1D993;
+  box-shadow: 0px 0px 20px rgb(0,0,0,0.5);
+}
+.backgroundVideo {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  background: black;
+  z-index: -5;
+  display: block;
+  opacity: 0.9;
+  box-shadow: 0px 0px 20px rgb(0,0,0,0.5);
+}
+.videoTitle {
+  font-size: 5vw;
+  font-weight: 800;
+  font-family: "Oswald";
+  position: absolute;
+  top: 23%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  color: #A2E297;
+  text-shadow: 5px 5px #8BB296;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*the product part of the home page*/
+.cover {
+    width: 100%;
+    height: 3vh;
+    background-color: #FFF0C4;
+    z-index: 100;
+    margin: -3vh;
+    position: absolute;
+}
+.cover2 {
+    width: 100%;
+    height: 5vh;
+    background-color: #FFF0C4;
+    z-index: 100;
+    margin: -2px;
+    position: absolute;
+}
+.buttonCell {
+    background-color: white;
+    margin: 0 2% 0 2%;
+    font-family: 'Bebas Neue';
+    width: 10vw;
+    position: static;
+    transition: 0.3s;
+    border: 2px solid black;
+    min-height: 45px;
+    min-width: 12vw;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-top: 0px;
+}
+.buttonIcon {
+    display: none;
+    margin-bottom: -6vh;
+}
+.button {
+  background-color: transparent;
+  font-size: 1.5vw;
+  margin: 0 1% 0 1%;
+  font-family: 'Bebas Neue';
+  width: 10vw;
+  position: static;
+  transition: 0.3s;
+  min-width: 10vw;
+}
+.buttonText {
+    margin-top: 0.5vh;
+    transition: 0.3s;
+}
+.button img {
+    position: relative;
+    top: 100%;
+    width: 20%;
+    transition: 0.3s;
+}
+
+/* 3 part section */
+.divParent {
+  font-size: 1.3vw;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+.divSubparent {
+  box-shadow: 10px 10px 10px 2px rgba(0,0,0,0.3);
+  position: absolute;
+  height: 25%;
+  width: 50%;
+}
+.divSubparent:nth-child(3) {
+  left: 40%;
+  top: 8%;
+}
+.divSubparent:nth-child(4) {
+  left: 40%;
+  top: 37.5%;
+}
+.divSubparent:nth-child(5) {
+  left: 40%;
+  top: 68.75%;
+}
+.divOne, .divTwo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+.divOne {
+  clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
+}
+.divTwo {
+  clip-path: polygon(73% 0, 100% 0, 100% 100%, 53% 100%);
+}
+.divPhoto {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.divOneText {
+  margin: 0px 0px 0px 2vw;
+  width: 48%;
+  font-family: 'PT Sans Narrow';
+}
+.divOneText h2 {
+  font-family: 'Bebas Neue';
+  margin: 0px;
+  margin: 1vw 0px 0.1vw 0px;
+}
+
+.divImage {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 60%;
+  transform: translateX(-60%) translateY(-50%);
+  transition: transform 5s .3s cubic-bezier(0,1,.3,1), opacity .5s ease-out .3s;
+  will-change: transform, opacity;
+  box-shadow: 0px 0px 20px rgb(0,0,0,0.5);
+  display: block;
+  z-index: -5;
+  opacity: 0;
+}
+.divImage.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* product classes */
+.productDiv {
+  width: 100%;
+  position: relative;
+  background: #FFF0C4;
+  padding: 100px 0px;
+}
+.productRow {
+  display: block;
+  width: 100%;
+  justify-content: center;
+}
+.productImage {
+  width: 20%;
+  display: inline-block;
+  margin: 1% 1%;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.5)
+}
+.productOverlay {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0,0.5);
+  transition: 0.75s;
+  opacity: 0;
+  z-index: 999;
+  font-size: 1.5vw;
+}
+.productCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.productCenter img {
+  width: 40%;
+  display: block;
+  margin: 0% 0% 8% 0%;
+}
+.productText2 {
+  font-family: 'Bebas Neue';
+  color: #474E8C;
+  border: 3px solid black;
+  background-color: white;
+  padding: 0px 1%;
+  cursor: pointer;
+  transition: 0.5s;
+  display: block;
+  width: 60%;
+}
+.productText2:hover {
+  background-color: #474E8C;
+  color: white;
+}
+.black {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 998;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* shop classes */
+.homeShop {
+  position: relative;
+  width: 100%;
+  background: #FFF0C4;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.shopContainer {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  box-shadow: 0px 0px 20px rgb(0,0,0,0.5);
+  opacity: 0;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1), opacity .5s ease-out .3s;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+.shopContainer.is-visible {
+  opacity: 1;
+}
+.shopDiv1, .shopDiv2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.shopDiv1 {
+  clip-path: polygon(0 0, 30% 0, 70% 100%, 0% 100%);
+  color: black;
+  z-index: -1;
+}
+.shopDiv2 {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 70% 100%);
+  z-index: -1;
+}
+.shopDiv2 img {
+  position: absolute;
+  top: 0%;
+  right: -40%;
+  width: 140%;
+}
+.shopText {
+  font-size: 1.3vw;
+  z-index: 10;
+  font-family: 'PT Sans Narrow';
+  width: 40%;
+  margin: 2vw;
+  overflow: hidden;
+
+}
+.shopText h1 {
+  font-size: 5vw;
+  margin: 5% 0% 5% 0%;
+  font-family: 'Fjalla One';
+  color: #A2E297;
+  text-shadow: 5px 5px #8BB296;
+}
+.shopBuy {
+  background-color: #5A6199;
+  color: white;
+  width: 6vw;
+  font-size: 1.3vw;
+  padding: 1.5%;
+  margin: 5% 0% 0% 0%;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+}
+.shopBuy:hover {
+  background-color: #41466E;
+}
+
+/* animation classes */
+.classic {
+  opacity: 0;
+  transform: rotateZ(-5deg) translateY(2em);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1), opacity .3s ease-out .3s;
+  will-change: transform, opacity;
+}
+.classic.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg) translateY(0em);
+}
+
+.image {
+  opacity: 0;
+  transition: opacity .5s ease-out .3s;
+  will-change: opacity;
+}
+.image.is-visible {
+  opacity: 1;
+  transform: translateY(0em);
+}
+
+.title {
+  opacity: 0;
+  transform: translateY(1em);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1), opacity 1s ease-out .3s;
+  will-change: transform, opacity;
+}
+.title.is-visible {
+  opacity: 1;
+  transform: translateY(0em);
+}

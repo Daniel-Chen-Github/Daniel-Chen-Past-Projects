@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <title></title>
+<style media="screen">
+  *{
+    margin : 0;
+    padding : 0;
+  }
+  body {
+    background-color : black;
+    font-family: 'Quicksand';
+  }
+  .container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width : 100%;
+  }
+  .container span{
+    text-transform: uppercase;
+    display: block;
+  }
+  .text {
+    color : white;
+    font-size : 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background-color: black;
+    position: relative;
+    animation: text 3s 1;
+  }
+  .text1 {
+    font-size: 25px;
+    color : white;
+    margin-bottom: 20px;
+    animation: example 3s 1;
+  }
+
+  .text2 a{
+    color : white;
+    transition: 0.5s;
+  }
+  .text2 a:hover{
+    color : black;
+    background-color: white;
+  }
+  @keyframes text {
+    0% {
+      color: black;
+      margin-bottom: -40px;
+    }
+    30% {
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+    85% {
+      letter-spacing: 8px;
+      margin-bottom: 40px;
+    }
+  }
+
+
+  @keyframes example {
+    0% {
+      color: black;
+      margin-bottom: -40px;
+      display: inline;
+    }
+    30% {
+      letter-spacing: 10px;
+      margin-bottom:  -40px;
+      display: inline;
+    }
+    85% {
+      letter-spacing: 8px;
+      margin-bottom: 80px;
+    }
+    100% {
+      display: inline;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="text"> Welcome to</span>
+      <div class="container1">
+        <span class="text1">Bao's Computer Shoop</span>
+        <span class="text2"> <a href="Index.html">Visit Our Home Website</a> </span>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

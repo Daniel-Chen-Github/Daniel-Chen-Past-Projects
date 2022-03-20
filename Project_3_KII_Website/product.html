@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product | KII Beverages</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <!-- idle header -->
+    <div class="idleHeader">
+      <div class="headerImageBackground"><img src="image/headerbackground.png" style="width: 100%;"></div>
+      <a href="index.html"><img src="image/letter3.png" alt="This is the logo" class="idleHeaderLogo"></a>
+      <a href="shop.html"><img src="image/iconCart.png" alt="This is the logo" class="idleHeaderCart"></a>
+      <div class="idleHeaderDiv">
+        <a href="index.html"><div class="box" onmouseover="grow(10)" onmouseout="shrink(10)"><div class="border" id="big10"></div>Home</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="about.html"><div class="box" onmouseover="grow(8)" onmouseout="shrink(8)"><div class="border" id="big8"></div>About</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="product.html"><div class="box" onmouseover="grow(9)" onmouseout="shrink(9)"><div class="border" id="big9"></div>Product</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="contact.html"><div class="box" onmouseover="grow(11)" onmouseout="shrink(11)"><div class="border" id="big11"></div>Contact</div></a>
+      </div>
+      <div class="idleHeaderDiv">
+        <a href="shop.html"><div class="box" onmouseover="grow(12)" onmouseout="shrink(12)"><div class="border" id="big12"></div>Shop</div></a>
+      </div>
+    </div>
+
+    <!-- opening picture -->
+    <div class="startingPic">
+      <img src="image/opening.jpg">
+      <div><u>Product</u></div>
+    </div>
+
+    <!-- picture section -->
+      <div class="productRow">
+        <a href="productClassic.html"><div class="productImage" onmouseover="scale(1)" onmouseout="small(1)">
+          <img src="image/teaClassic.jpg" class="fillerImg">
+          <img src="image/teaClassic.jpg" class="productImg" id="1">
+          <div class="productOverlay" id="overlay1"></div>
+          <div class="productText color6">
+            Classic Tea
+          </div>
+        </div></a>
+        <a href="productMango.html"><div class="productImage" onmouseover="scale(2)" onmouseout="small(2)">
+          <img src="image/teaMango.jpg" class="fillerImg">
+          <img src="image/teaMango.jpg" class="productImg" id="2">
+          <div class="productOverlay" id="overlay2"></div>
+          <div class="productText color1">
+            Mango Tea
+          </div>
+        </div></a>
+        <a href="productTaro.html"><div class="productImage" onmouseover="scale(3)" onmouseout="small(3)">
+          <img src="image/teaTaro.jpg" class="fillerImg">
+          <img src="image/teaTaro.jpg" class="productImg" id="3">
+          <div class="productOverlay" id="overlay3"></div>
+          <div class="productText color2">Saitomo Tea</div>
+        </div></a>
+      </div>
+
+      <div class="productRow">
+        <a href="productStrawberry.html"><div class="productImage" onmouseover="scale(4)" onmouseout="small(4)">
+          <img src="image/teaStrawberry.jpg" class="fillerImg">
+          <img src="image/teaStrawberry.jpg" class="productImg" id="4">
+          <div class="productOverlay" id="overlay4"></div>
+          <div class="productText color3">Ichigo Tea</div>
+        </div></a>
+        <a href="productLychee.html"><div class="productImage" onmouseover="scale(5)" onmouseout="small(5)">
+          <img src="image/teaLychee.jpg" class="fillerImg">
+          <img src="image/teaLychee.jpg" class="productImg" id="5">
+          <div class="productOverlay" id="overlay5"></div>
+          <div class="productText color4">Raichi Tea</div>
+        </div></a>
+        <a href="productChocolate.html"><div class="productImage" onmouseover="scale(6)" onmouseout="small(6)">
+          <img src="image/teaChocolate.jpg" class="fillerImg">
+          <img src="image/teaChocolate.jpg" class="productImg" id="6">
+          <div class="productOverlay" id="overlay6"></div>
+          <div class="productText color5">Chokoreto Tea</div>
+        </div></a>
+      </div>
+
+      <br><br><br><br>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+          <div class="footerBackground"> <img src="image/footerBackground.png" alt="" style="width: 50%;"> </div>
+          <div class="footerImg">
+            <img src="image/letter2.png" style="height: 100%">
+          </div>
+          <div class="footerContent">
+            <a href="https://www.facebook.com/uwkonja" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/company/kii-beverages/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/uwkonja/" class="fa fa-instagram"></a> <br>
+            &#169; 2020 KII | created by Daniel Chen
+          </div>
+        </div>
+      </footer>
+
+      <script type="text/javascript">
+        function scale(x) {
+          document.getElementById(x).style.transform = "scale(1.2, 1.2)"
+          document.getElementById('overlay' + x).style.background = "gray"
+          document.getElementById('overlay' + x).style.opacity = "0.15"
+        }
+        function small(x) {
+          document.getElementById(x).style.transform = "scale(1, 1)"
+          document.getElementById('overlay' + x).style.background = "white"
+          document.getElementById('overlay' + x).style.opacity = "0.1"
+        }
+
+        //grow and shrink of the header underlines
+          function grow(x) {
+            document.getElementById('big' + x).style.width = "100%"
+          }
+          function shrink(x) {
+            document.getElementById('big' + x).style.width = "0%"
+          }
+      </script>
+  </body>
+</html>
